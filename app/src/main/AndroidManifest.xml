@@ -37,10 +37,20 @@
 
         </activity>
 
+        <activity android:name=".ui.MapActivity">
+
+        </activity>
+
         <receiver android:name=".receivers.Alarm_Receiver" />
 
         <service android:name=".services.RingtonePlayingService"
             android:enabled="true">
         </service>
+
+        <meta-data android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDnMjiJLQebnS29SmZTvA4f7gHSs5hT4Y4"/>
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
     </application>
 </manifest>

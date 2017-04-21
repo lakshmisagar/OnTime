@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.MapActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gotoLoc"
+        android:layout_gravity="center_horizontal"
+        android:hint="Where do you want to go?"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:onClick="geoLocate"
+        android:layout_gravity="center_horizontal"/>
+
+    <fragment
+        android:id="@+id/mapfragment"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+<!--    &lt;!&ndash; Subhu's code start&ndash;&gt;
+<LinearLayout
+android:id="@+id/directions_layout"
+android:layout_below="@id/update_alarm"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<Button
+    android:id="@+id/get_directions"
+    android:layout_width="wrap_content"
+    android:text="Get Directions"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:id="@+id/map_source_text"
+    android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:id="@+id/walk_text"
+    android:layout_margin="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:id="@+id/bike_text"
+    android:layout_margin="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:id="@+id/drive_text"
+    android:layout_margin="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+    &lt;!&ndash; Subhu's code end&ndash;&gt;-->

@@ -6,8 +6,9 @@
     <string name="EventsList">Events</string>
     <string name="createClass">Class Name</string>
     <string name="selectPhoneMode">Phone Mode</string>
-    <string name="setClassTime">Class Time</string>
+    <string name="setClassTime">Set class Time</string>
     <string name="preference">Had Coffee ?</string>
+    <string name="save">save</string>
     <string-array name="modes">
         <item>Silent</item>
         <item>Vibrate</item>

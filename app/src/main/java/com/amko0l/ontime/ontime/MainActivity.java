@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.amko0l.ontime.ontime.ui.AlarmActivity;
 import com.amko0l.ontime.ontime.ui.LaunchActivity;
+import com.amko0l.ontime.ontime.ui.MapActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +33,25 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button btnmap = (Button) findViewById(R.id.btnmap);
+        btnmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MapActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnmapcoffee = (Button) findViewById(R.id.btnmapcoffee);
+        btnmapcoffee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MapActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
